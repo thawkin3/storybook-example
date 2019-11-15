@@ -1,9 +1,11 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { Button } from './button';
 
 export default {
   title: 'Global|Button',
+  decorators: [withKnobs],
 };
 
 export const basicUsage = () => (
@@ -50,5 +52,13 @@ export const withNoSpacesInText = () => (
     text="sdhfkjhgfdkjghdfjghdflkfdjskdlafsjlkfghfslkdjadjkfhgljsdajhklfgfhdjfkhdajkdfghjkfahdadjkfhafsjkhddfgjlhfasdlkfah"
     onClick={action('clicked!')}
     focusType="outline"
+  />
+);
+
+export const knobs = () => (
+  <Button
+    text={text('text', 'Click me')}
+    onClick={action('clicked!')}
+    focusType={select('focusType', ['outline', 'underline'], 'outline')}
   />
 );
