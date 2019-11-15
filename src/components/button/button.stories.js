@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import { Button } from './button';
 
 export default {
@@ -8,14 +9,14 @@ export default {
 export const basicUsage = () => (
   <Button
     text="Click me"
-    onClick={() => alert('clicked!')}
+    onClick={action('clicked!')}
   />
 );
 
 export const outline = () => (
   <Button
     text="Click me"
-    onClick={() => alert('clicked!')}
+    onClick={action('clicked!')}
     focusType="outline"
   />
 );
@@ -23,7 +24,7 @@ export const outline = () => (
 export const underline = () => (
   <Button
     text="Click me"
-    onClick={() => alert('clicked!')}
+    onClick={action('clicked!')}
     focusType="underline"
   />
 );
