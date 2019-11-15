@@ -1,16 +1,16 @@
 .card {
   background: #fff;
-  border: 1px solid #000;
-  border-radius: 4px;
-  width: 300px;
+  border: 0.0625rem solid #000;
+  border-radius: 0.25rem;
+  width: 18rem;
 }
 
 .card-section {
-  padding: 10px;
+  padding: 0.75rem;
 }
 
 .content {
-  padding: 30px 10px;
+  padding: 2rem 0.75rem;
 }
 
 .header {
