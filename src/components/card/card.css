@@ -1,0 +1,26 @@
+.card {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.card-section {
+  padding: 10px;
+}
+
+.content {
+  padding: 30px 10px;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  background: deeppink;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  background: deepskyblue;
+}
