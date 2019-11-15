@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from './card';
 
 export default {
-  title: 'Card',
+  title: 'Global|Card',
 };
 
 export const basicUsage = () => (
