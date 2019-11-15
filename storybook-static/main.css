@@ -1,0 +1,86 @@
+.button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 0.5rem;
+  background: deeppink;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  max-width: 18rem;       /* added to solve long strings */
+  word-break: break-word; /* added to solve no spaces */
+  word-wrap: break-word;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+}
+
+.outline:focus::before,
+.outline:hover::before {
+  box-shadow: deeppink 0 0 0 0.0625rem;
+  content: "";
+  height: calc(100% + 0.25rem);
+  left: 0px;
+  margin-left: -0.25rem;
+  margin-top: -0.25rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  width: calc(100% + 0.25rem);
+  border-radius: inherit;
+  padding: 0.125rem;
+}
+
+.underline {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: deeppink;
+  padding: 0;
+  margin: 0.25rem 0.5rem;
+  font-weight: bold;
+}
+
+.underline:focus::before,
+.underline:hover::before {
+  border-bottom: 0.0625rem solid currentcolor;
+  bottom: -0.1875rem;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.card {
+  background: #fff;
+  border: 0.0625rem solid #000;
+  border-radius: 0.25rem;
+  width: 18rem;
+}
+
+.card-section {
+  padding: 0.75rem;
+}
+
+.content {
+  padding: 2rem 0.75rem;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  background: deeppink;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  background: deepskyblue;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
