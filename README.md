@@ -1,8 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Storybook Example
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by running `npx create-react-app <storybook-example>` to initialize a new React app. Storybook was then added to the project using the instructions in the [Storybook Quick Start Guide](https://storybook.js.org/docs/guides/quick-start-guide/). The command is simply: `npx -p @storybook/cli sb init`.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn storybook`
+
+Starts Storybook in development mode. Storybook will open automatically for you once it's ready. While Storybook is running, you can make changes to your code and Storybook will hot reload.
+
+### `yarn build-storybook`
+
+Generates the Storybook static site for you and creates an output directory called `storybook-static`. This is what you would use if you wanted to have your Storybook hosted somewhere for others to view.
 
 ### `yarn start`
 
