@@ -7,9 +7,9 @@
   color: #fff;
   cursor: pointer;
   position: relative;
-  max-width: 18rem;       /* added to solve long strings */
-  word-break: break-word; /* added to solve no spaces */
-  word-wrap: break-word;
+  /* max-width: 18rem; */
+  /* word-break: break-word; */
+  /* word-wrap: break-word; */
 }
 
 .button:focus,
